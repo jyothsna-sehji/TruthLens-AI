@@ -13,7 +13,7 @@ public class Main {
     public static void main(String[] args) throws Exception {
 
         HttpServer server = HttpServer.create(
-            new InetSocketAddress("127.0.0.1", 8080), 0
+           new InetSocketAddress("0.0.0.0", Integer.parseInt(System.getenv().getOrDefault("PORT", "8080"))), 0
         );
 
         server.createContext("/", Main::handleRequest);
