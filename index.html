@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TruthLens AI | Scam Detection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <span class="logo-icon">◈</span>
+            TruthLens <span>AI</span>
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#analyzer">Message Analyzer</a>
+            <a href="#about">About</a>
+        </nav>
+
+        <div class="status">
+            <span class="status-dot"></span>
+            AI System Ready
+        </div>
+    </header>
+
+    <main id="home">
+
+        <section class="hero">
+            <div class="tagline">INTELLIGENT MESSAGE SECURITY</div>
+
+            <h1>
+                Don't Just Read It.<br>
+                <span>Verify It.</span>
+            </h1>
+
+            <p>
+                Detect hidden scams and suspicious patterns
+                in everyday messages using TruthLens AI.
+            </p>
+
+            <a href="#analyzer" class="start-btn">
+                Analyze a Message →
+            </a>
+        </section>
+
+        <section class="analyzer" id="analyzer">
+
+            <div class="section-heading">
+                <h2>Message Analyzer</h2>
+                <p>Paste your message below to check its authenticity.</p>
+            </div>
+
+            <div class="analyzer-card">
+
+                <label for="message">ENTER YOUR MESSAGE</label>
+
+                <textarea
+                    id="message"
+                    placeholder="Paste or type your message here..."
+                ></textarea>
+
+                <div class="input-footer">
+                    <span id="charCount">0 characters</span>
+                    <button id="clearBtn" type="button">Clear Text</button>
+                </div>
+
+                <button id="analyzeBtn" class="analyze-btn">
+                    ◈ Analyze Message
+                </button>
+
+                <div id="result" class="result hidden">
+
+                    <div class="result-top">
+                        <div>
+                            <span class="result-label">ANALYSIS RESULT</span>
+                            <h2 id="resultTitle">Result</h2>
+                        </div>
+
+                        <div class="score">
+                            <strong id="riskScore">0</strong>
+                            <span>/100</span>
+                        </div>
+                    </div>
+
+                    <div class="risk-track">
+                        <div id="riskBar"></div>
+                    </div>
+
+                    <h3>Why was this message flagged?</h3>
+                    <ul id="reasons"></ul>
+
+                    <div class="recommendation">
+                        <strong>Safety Recommendation</strong>
+                        <p id="recommendationText"></p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <h2>How TruthLens AI Works</h2>
+
+            <div class="features">
+                <div class="feature">
+                    <span>01</span>
+                    <h3>Input</h3>
+                    <p>Enter or paste any message.</p>
+                </div>
+
+                <div class="feature">
+                    <span>02</span>
+                    <h3>Analyze</h3>
+                    <p>Examine suspicious language patterns.</p>
+                </div>
+
+                <div class="feature">
+                    <span>03</span>
+                    <h3>Detect</h3>
+                    <p>Receive a risk score and explanation.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <h3>TruthLens AI</h3>
+        <p>See Beyond the Message. Detect the Hidden Risk.</p>
+        <p>Academic AI Project | 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
